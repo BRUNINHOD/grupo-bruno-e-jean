@@ -4,4 +4,8 @@
     --fundo-senha:#1e1bdb;
     --borda:#649856;
 }
-body
+body{
+    height: 100vh;
+    background: rgb(0, 29, 36);
+    background: linear-gradient(43deg, #1e1bdbs);
+}
