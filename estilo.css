@@ -2,10 +2,25 @@
     --cor-de-fundo: #ff008a;
     --cor-de-texto:#fff;
     --fundo-senha:#1e1bdb;
+    --fundo-texto
     --borda:#649856;
+    --tipo-fonte; " poetsen one", sans-serif;
+
 }
+
+*{
+    font-weight: 400;
+}
+
 body{
-    height: 100vh;
-    background: rgb(0, 29, 36);
-    background: linear-gradient(43deg, #1e1bdbs);
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-de-texto);
+    font-family: var(--tipo-fonte);
+}
+.titulo-principal{
+    font-weight: 700;
+}
+
+.titulo-secundario{
+    font-size: ;
 }
