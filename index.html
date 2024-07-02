@@ -1,39 +1,56 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Senhas</title>
     <link rel="stylesheet" href="./estilo.css">
 </head>
 <body>
-    <div class="conteudo-titulo">
-        <img src="" alt="">
-        <h1 class="titulo-principal">Gerador de Senha</h1>
-        <h2 class="titulo-segundario">Gera instantaneamente uma senha aleatória e segura</h2>
-    </div>
-    <div class="conteudo-senha">
-        <label for="senha">senha</label>
-        <input type="text" name="senha" id="campo-senha" 
-    </div>
-        <div class="parametro">
-            <h3 class=" parametro-titulo">personalize sua senha</h3>
-        <div class="parametro-coluna-senha">
-            <div class="parametro-senha">]
-                <h4 class="parametro-senha-titulo">PVIHN</h4>
-                <div class="parametro--botoes">
-                    <button class="parametro-senha-botao"></button>
-                    <p class="parametro-senha-texto"
+        <section class="conteudo">
+            <div class="conteudo-titulo">
+                <img src="/unlock.svg" alt="">
+                <h1 class="titulo-principal">Gerador de senhas</h2>
+                <h2 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h3>
+            </div>
+            <div class="conteudo-senha">
+                <label for="senha">Senha</label>
+                <input name="senha" type="text" id="campo-senha">
+            </div>
+            <div class="parametro">
+                <h3 class="parametro-titulo">Personalize sua senha</h3>
+                <div class="parametro-coluna-senha">
+                    <div class="parametro-senha">
+                        <h4 class="parametro-senha-titulo">Número de caracteres</h4>
+                        <div class="parametro-senha-botoes">
+                            <button class="parametro-senha-botao">-</button>
+                            <p class="parametro-senha-texto">12</p>
+                            <button class="parametro-senha-botao">+</button>
+                        </div>
+                    </div>               
+                    <div class="parametro--senha">
+                        <h4 class="parametro-senha-titulo">Características da senha</h4>
+                        <div class="parametro-senha-checbox">
+                            <input type="checkbox" name="maiusculo" id="" class="checkbox" >
+                            <label for="maiusculo">letras maiusculas</label>
+                        </div>
+                        <div class="parametro-senha-checbox">
+                            <input type="checkbox" name="minuscula" id="" class="checkbox" >
+                            <label for="minuscula">letras minusculas</label>
+                        </div>
+                        <div class="parametro-senha-checbox">
+                            <input type="checkbox" name="numero" id="" class="checkbox" >
+                            <label for="numero">numeros</label>
+                        </div>
+                        <div class="parametro-senha-checbox">
+                            <input type="checkbox" name="simbolos" id="" class="checkbox" >
+                            <label for="simbolos">simbolos</label>
+                        </div>
+                    </div>
+                    <div class="parametro-senha">
+                        <h4 class="parametro-senha-titulo">Força da senha</h4>
+                    </div>
                 </div>
-        </div>
-        <div class="parametro-senha">
-            <h4 class="parametro-senha-titulo">VAB</h4>
-         </div>
-         <div class="parametro-senha">
-            <h4 class="parametro-senha-título">MEEEE</h4>
-         </div>
-        </div>
-    </div>
-    </div>
+            </div>
+        </section>
 </body>
 </html>
