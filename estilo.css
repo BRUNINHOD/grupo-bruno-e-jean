@@ -6,7 +6,10 @@
     --borda: #649856;
 
 }
+.body{
+    color: black;
 
+}
 .titulo-secundario{
     font-size: 24px;
     color: var(--cor-de-texto);
