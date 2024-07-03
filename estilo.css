@@ -3,12 +3,11 @@
     --cor-de-texto:#d31313;
     --fundo-senha:#1e1bdb;
     --fundo-texto
-    --borda: #d31313;
+    --borda: #649856;
 
 }
 body{
     background-color: black;
-    background: #2210c4;
 
 }
 .titulo-secundario{
