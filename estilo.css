@@ -97,6 +97,22 @@ color: var(--cor-de-texto);
 
 }
 
+.barra{
+    background-color: var(--fundo-senha);
+    height: 30px;
+    width: 100%;
+}
+
+.forca{
+    height: 30px;
+    position: relative;
+    bottom: 30px;
+}
+.fraca{
+    width: 25%;
+    background-color: #d31313;
+}
+
 @media screen and (min-width:768px){
     .parametro-coluna-senha{
         flex-direction: row;
