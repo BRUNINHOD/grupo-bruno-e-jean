@@ -7,7 +7,11 @@ botoes[1].onclick = almentarTamanho
 let tamanhoSenha = 5
 numeroSenha.textContent = tamanhoSenha
 
-let maiuscula = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+let maiuscula = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+let minuscula = "abcdefghijklmnopqrstuvwxyz"
+let numero = "123456789"
+let simbolos = "!@#$%*?"
+
 console.log(maiuscula);
 
 function diminuirTamanho() {
@@ -22,3 +26,9 @@ function almentarTamanho() {
     tamanhoSenha = tamanhoSenha + 1
     numeroSenha.textContent = tamanhoSenha
 }
+function gerasenha(){
+    let senha = ""
+    for(let i = 0; i < tamanhoSenha; i++ )
+}
+  
+    
