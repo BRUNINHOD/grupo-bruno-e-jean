@@ -1,6 +1,6 @@
 const numeroSenha = document.querySelector('.parametro-senha__texto')
 const botoes = document.querySelectorAll('.parametro-senha__botao')
-
+const campoSenha = document.querySelector('#campo-senha');
 botoes[0].onclick = diminuirTamanho
 botoes[1].onclick = almentarTamanho
 
@@ -26,9 +26,17 @@ function almentarTamanho() {
     tamanhoSenha = tamanhoSenha + 1
     numeroSenha.textContent = tamanhoSenha
 }
+
+
+
 function gerasenha(){
     let senha = ""
-    for(let i = 0; i < tamanhoSenha; i++ )
+    for(let i = 0; i < tamanhoSenha; i++ ){
+        let numeroAleatorio =Math.floor(numeroAleatorio)
+        semha = senha = maiuscula[numeroAleatorio]
+        consolelog(senha)
+    }
+    campoSenha.value = senha 
 }
   
     
