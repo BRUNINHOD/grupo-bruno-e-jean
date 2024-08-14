@@ -21,6 +21,9 @@ gerasenha()
 for (i=0; i < checkbox.length;i++){
     checkbox[i].onclick = geraSenha;
 }
+
+function alementarTamanho
+
 console.log(maiuscula);
 
 function diminuirTamanho() {
