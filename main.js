@@ -1,8 +1,12 @@
 const numeroSenha = document.querySelector('.parametro-senha__texto')
 const botoes = document.querySelectorAll('.parametro-senha__botao')
 const campoSenha = document.querySelector('#campo-senha');
+const checkbox = document.querySelectorAll('.checkbox')
+
+console.log(checkbox[0].checkbox)
+
 botoes[0].onclick = diminuirTamanho
-botoes[1].onclick = almentarTamanho
+botoes[1].onclick = almentarTamanhohe
 
 let tamanhoSenha = 5
 numeroSenha.textContent = tamanhoSenha
@@ -12,6 +16,11 @@ let minuscula = "abcdefghijklmnopqrstuvwxyz"
 let numero = "123456789"
 let simbolos = "!@#$%*?"
 
+gerasenha()
+
+for (i=0; i < checkbox.length;i++){
+    checkbox[i].onclick = geraSenha;
+}
 console.log(maiuscula);
 
 function diminuirTamanho() {
