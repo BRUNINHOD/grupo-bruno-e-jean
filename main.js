@@ -3,10 +3,10 @@ const botoes = document.querySelectorAll('.parametro-senha__botao')
 const campoSenha = document.querySelector('#campo-senha');
 const checkbox = document.querySelectorAll('.checkbox')
 
-console.log(checkbox[0].checkbox)
+console.log(checkbox[0].Checked)
 
 botoes[0].onclick = diminuirTamanho
-botoes[1].onclick = almentarTamanhohe
+botoes[1].onclick = almentarTamanho
 
 let tamanhoSenha = 5
 numeroSenha.textContent = tamanhoSenha
@@ -14,41 +14,55 @@ numeroSenha.textContent = tamanhoSenha
 let maiuscula = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 let minuscula = "abcdefghijklmnopqrstuvwxyz"
 let numero = "123456789"
-let simbolos = "!@#$%*?"
+let simbolos ="!?@%&*#-_"
 
-gerasenha()
+geraSenha()
 
 for (i=0; i < checkbox.length;i++){
     checkbox[i].onclick = geraSenha;
 }
-
-function alementarTamanho
-
-console.log(maiuscula);
 
 function diminuirTamanho() {
     if (tamanhoSenha > 1) 
         
     tamanhoSenha = tamanhoSenha - 1
     numeroSenha.textContent = tamanhoSenha
+    geraSenha()
 }
 
 function almentarTamanho() {
     if (tamanhoSenha < 20) 
     tamanhoSenha = tamanhoSenha + 1
     numeroSenha.textContent = tamanhoSenha
+    geraSenha()
 }
 
 
-
-function gerasenha(){
+function geraSenha(){
+    let alfabeto = ""
     let senha = ""
-    for(let i = 0; i < tamanhoSenha; i++ ){
-        let numeroAleatorio =Math.floor(numeroAleatorio)
-        semha = senha = maiuscula[numeroAleatorio]
-        consolelog(senha)
+    if(checkbox[0].checked){
+        alfabeto = alfabeto + maiuscula
     }
-    campoSenha.value = senha 
+
+    if(checkbox[1].checked){
+        alfabeto = alfabeto + minuscula
+    }
+
+    if(checkbox[2].checked){
+        alfabeto = alfabeto + numero
+    }
+
+    if(checkbox[3].checked){
+        alfabeto = alfabeto + simbolos
+    }
+    console.log(alfabeto)
+
+    for(let i = 0; i < tamanhoSenha; i++ ){
+        let numeroAleatorio = Math.random() * alfabeto.length
+        numeroAleatorio = Math.floor(numeroAleatorio)
+        senha = senha + alfabeto[numeroAleatorio];
+        console.log(senha)
+    }
+      campoSenha.value = senha   
 }
-  
-    
